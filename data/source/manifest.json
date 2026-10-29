@@ -1,0 +1,54 @@
+{
+  "actual_full_export_controls": {
+    "C": 1070713,
+    "N": 49001937,
+    "O": 38640915,
+    "V": 118582
+  },
+  "fields": [
+    "year",
+    "month",
+    "carrier",
+    "airport",
+    "arr_flights",
+    "arr_del15",
+    "arr_cancelled",
+    "arr_diverted"
+  ],
+  "independent_parser_scalar_checks": 1291320,
+  "interpretation": "Captured reported nominal carrier/airport count cells, not independently verified unique flights, passenger truth or historical publication vintages.",
+  "projection_csv_sha256": "9435e74b1129edca2c843afd549145690ffb314368e544b455b01549593bcd6b",
+  "projection_file": "data/source/flight-counts.csv.gz",
+  "projection_gzip_sha256": "86c7b2fe17cb88d8daee44100f70993a2ac462cc722ad463d24f6e578cfba8f3",
+  "quality": {
+    "duplicate_keys": 0,
+    "logically_zero_delay_with_original_null": 243,
+    "null_count_fields": {
+      "arr_cancelled": 294,
+      "arr_del15": 537,
+      "arr_diverted": 294,
+      "arr_flights": 294
+    },
+    "null_resolution": "Original null retained. Exact nonnegative partition bound identifies D=O=0 only at N=C+V. Conditional B=0 rates remain undefined.",
+    "selected_null_count_fields": {
+      "arr_cancelled": 42,
+      "arr_del15": 65,
+      "arr_diverted": 42,
+      "arr_flights": 42
+    },
+    "selected_rows": 38069,
+    "selected_zero_scheduled_rows": 0,
+    "source_key": "year/month/carrier/airport",
+    "source_months": 84,
+    "source_rows": 161415,
+    "zero_scheduled_rows": 0
+  },
+  "raw_source_public": false,
+  "rights": "Bounded use of eight factual aggregate count/key fields and original outputs from the official public export, with attribution. No source expressive text, raw archive, logo, source-wide license or blanket public-domain assertion.",
+  "source_control_checks": 8,
+  "source_csv_bytes": 27001643,
+  "source_csv_sha256": "faf0c45b55233cabbdc1822af476e34a510dde44505e95577ce78078e1f960b2",
+  "source_landing": "https://www.transtats.bts.gov/ot_delay/OT_DelayCause1.asp",
+  "source_zip_bytes": 6095050,
+  "source_zip_sha256": "1047d8b25157066023f1fcb1ec4510540f2e7dbd8f542807aa9b66c025685182"
+}

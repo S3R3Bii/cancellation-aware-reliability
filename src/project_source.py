@@ -99,7 +99,7 @@ def main():
     quality=dict(source_rows=len(rows),selected_rows=len(selected),source_months=84,source_key='year/month/carrier/airport',duplicate_keys=0,
                  null_count_fields={c:sum(r[c] is None for r in rows) for c in COUNTS},zero_scheduled_rows=sum(r['arr_flights']==0 for r in rows),
                  selected_null_count_fields={c:sum(r[c] is None for r in selected) for c in COUNTS},selected_zero_scheduled_rows=sum(r['arr_flights']==0 for r in selected),
-                 logically_zero_delay_with_original_null=sum(r['arr_del15'] is None and r['arr_flights']==r['arr_cancelled']+r['arr_diverted'] for r in rows),
+                 logically_zero_delay_with_original_null=sum(r['arr_del15'] is None and all(r[k] is not None for k in ['arr_flights','arr_cancelled','arr_diverted']) and r['arr_flights']==r['arr_cancelled']+r['arr_diverted'] for r in rows),
                  null_resolution='Original null retained. Exact nonnegative partition bound identifies D=O=0 only at N=C+V. Conditional B=0 rates remain undefined.')
     manifest=dict(source_landing=cfg['source']['landing'],source_zip_sha256=cfg['source']['zip_sha256'],source_csv_sha256=cfg['source']['csv_sha256'],
                   source_zip_bytes=len(raw),source_csv_bytes=len(data),projection_file='data/source/flight-counts.csv.gz',projection_csv_sha256=hashlib.sha256(projection).hexdigest(),

@@ -1,7 +1,7 @@
 {
-  "timestamp_utc": "2026-10-29T21:58:45.812117+00:00",
+  "timestamp_utc": "2026-10-29T21:59:42.234894+00:00",
   "status": "PASS_BOUNDED_SCAN",
-  "files_checked": 12,
+  "files_checked": 14,
   "scope": "Exact staged Git index bytes; decompressed text; forbidden paths/extensions, high-confidence key and private machine path patterns; local Markdown links. Image/PDF contents require separate visual/source review. This is not universal secret detection.",
   "findings": [],
   "sha256": {
@@ -12,10 +12,12 @@
     "SOURCES.md": "8eebd58f8205063fb85734c8e48298dcbd39d781e3d98be489ff917fae0ab242",
     "SOURCE_CLARIFICATION.md": "f78f20cfb9c7ac0908ea399e1fff1ef1d0356b6dcaedc8bde99db48bbc4cd4f7",
     "data/source/control_totals.json": "467716f6e4c6d208c42c3298689f25bbfe4dcbe09dc9dd5a8ad89dece432c3e2",
+    "data/source/flight-counts.csv.gz": "86c7b2fe17cb88d8daee44100f70993a2ac462cc722ad463d24f6e578cfba8f3",
+    "data/source/manifest.json": "c8ac52c13af2a9a127aa708f1dd4e18e8c530b66d37a5fb1ef45f767001d578b",
     "data/source/structural-null-verification.json": "3ed683c528db3e77efde66966aafe99ae06ee7e897757fa93196a0d09786bb01",
     "protocol.json": "7e806786c043f34add11ad8f0fdc77ed97221cc8171743ab053003e4a36ca159",
     "results/SOURCE_FAILURE_INITIAL.json": "7e98335db5f6e29cc5df3a2b236fb6bf5b86bb330265dd8f640a5c4459abb069",
-    "src/project_source.py": "780529f3e80dc89a088c24dffa2a4b791489cf0ebb7418a9a3aff80cba6b6eb5"
+    "src/project_source.py": "e45df69bd24d0f7aeba0de5144053ede6a96f1a58821f13031d1fcec0faf00f4"
   },
   "raw_source_members_excluded": true,
   "unapproved_manuscripts_excluded": true,
