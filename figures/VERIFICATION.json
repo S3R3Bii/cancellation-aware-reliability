@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "actual_artist_numeric_values": 168,
+  "gap_annotations": 6,
+  "heatmap_annotations": 24,
+  "heatmap_contrast_checks": 24,
+  "minimum_annotation_contrast": 5.5348344482695175,
+  "export_hashes": 9,
+  "scope": "Finite numeric artist/annotation/hash checks plus separate visual review; no accessibility-conformance claim."
+}

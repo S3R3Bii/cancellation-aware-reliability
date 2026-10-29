@@ -16,8 +16,11 @@
       "arr_cancelled",
       "arr_diverted"
     ],
-    "rights": "Exact source rights and count semantics must pass before analysis/publication",
-    "raw_archives_public": false
+    "rights": "Bounded use of eight factual aggregate count/key fields and original outputs from the official public export, with attribution. No source expressive text, raw archive, logo, source-wide license or blanket public-domain assertion.",
+    "raw_archives_public": false,
+    "zip_sha256": "1047d8b25157066023f1fcb1ec4510540f2e7dbd8f542807aa9b66c025685182",
+    "csv_sha256": "faf0c45b55233cabbdc1822af476e34a510dde44505e95577ce78078e1f960b2",
+    "exact_fields_confirmed": true
   },
   "carriers": [
     "AA",
@@ -74,5 +77,7 @@
   "selection": "No fitting, optimizer, hyperparameter selection, survival model or forecasting. Fixed carriers and all deterministic scenarios retained. Freeze source/protocol/executable/checker before held analytical summaries; source inputs and quality visible without blinding.",
   "checks": "Strict unique year-month-carrier-airport keys; nonnegative integer counts; D+C+V<=N; source denominators reconcile to official tabular counts/percentages at display precision; independent pandas/standard-CSV projection and source controls; independent SQLite cohorts/weights/counts plus rational metric/identity reconstruction; isolated replay.",
   "scope": "Retrospective finite monthly published-count and denominator comparison. Route/time-to-event and NOAA weather adjustment from the broader proposal are outside this export and are not claimed. No passenger-delay, cancellation-causes, airline strategy, operational benefit, savings or novelty claim.",
-  "public_scope": "Only minimal federal aggregate count projection and original code/results/figures/manuscript after bounded rights/privacy checks. No flight/customer/tail identifiers, bookings, raw archives, full reports, logos, credentials or formal-publication projects."
+  "public_scope": "Only minimal federal aggregate count projection and original code/results/figures/manuscript after bounded rights/privacy checks. No flight/customer/tail identifiers, bookings, raw archives, full reports, logos, credentials or formal-publication projects.",
+  "carrier_scope": "Nominal reported carrier codes AA/DL/UA/WN as supplied. Header has no operating-versus-marketing flag; do not claim independently verified operating-only or disjoint carrier populations. Reference weights are explicitly a function of published cells, not a unique-flight national total.",
+  "structural_null_rule": "Keep original null D in source projection. Only when N,C,V are observed nonnegative integers and N=C+V, resolve derived D=O=0 by 0<=D<=N-C-V=0 under the mutually exclusive outcome partition. Mark this as logically resolved, never an observed zero. Every other missing outcome with positive N fails. Conditional B=0 rates remain undefined."
 }

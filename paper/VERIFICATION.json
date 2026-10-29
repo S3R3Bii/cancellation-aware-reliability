@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "independent_paper_checks": 365,
+  "primary_rows": 6,
+  "held_mix_rows": 12,
+  "synthetic_rows": 12,
+  "development_rows": 16,
+  "pdf_pages": 7,
+  "pdf_active_content_checks": 4,
+  "scope": "Independent display reconstruction, direct primary source-count sums, qualifications, exact approved hashes and bounded PDF actions. Rendered layout and source rights reviewed separately."
+}

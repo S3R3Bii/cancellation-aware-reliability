@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "stage": "development",
+  "exact_exported_fields_checked": 865095,
+  "conversion_identity_checks": 168675,
+  "airport_count_rows": 44980,
+  "metric_rows": 11648,
+  "baseline_airports": 58,
+  "independence": "Separate SQLite cohort/weights/count aggregation and rational partition reconstruction; imports no analysis/model helper.",
+  "scope": "Finite captured source cells and declared synthetic transformations only; no source truth, causal or future guarantee."
+}

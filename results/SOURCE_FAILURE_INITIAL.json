@@ -1,0 +1,28 @@
+{
+  "timestamp_utc": "2026-10-29T21:57:44.485634+00:00",
+  "state": "SOURCE_HOLD",
+  "source_zip_sha256": "1047d8b25157066023f1fcb1ec4510540f2e7dbd8f542807aa9b66c025685182",
+  "source_rows": 161415,
+  "positive_total_rows_with_unknown_outcomes": 243,
+  "selected_carrier_affected_rows": 23,
+  "null_fields": {
+    "arr_flights": 0,
+    "arr_del15": 243,
+    "arr_cancelled": 0,
+    "arr_diverted": 0
+  },
+  "years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "independent_check": "Separate pandas C-parser confirms positive scheduled totals with absent outcome fields; no model/metric helper imported.",
+  "gate": "Required nonnegative complete outcome partition and exact scheduled/on-time/cancel/divert reconciliation cannot be asserted from incomplete source outcomes.",
+  "retained_failure": "Initial Decimal/standard-CSV projection stopped before writing public data or analytical outcomes. Private failed code version retained.",
+  "prohibited_workarounds": "Do not fill null outcomes with zero, remove affected rows after seeing failure, revise the required source gate or claim a completed study.",
+  "next_step": "Obtain authoritative blank-field semantics or a corrected official export and prospectively document a valid protocol before computing outcomes."
+}
