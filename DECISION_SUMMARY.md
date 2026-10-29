@@ -1,0 +1,79 @@
+# Cancellation-aware airport reliability
+
+A constructed completed-flight view raises the fixed-airport-weight on-time percentage by 0.708–1.353 percentage points across the six prespecified UA/WN carrier-year panels in 2023–2025. These are the same captured count cells with different denominators. The official BTS tabular on-time percentage already uses scheduled totals; this is not evidence that BTS omits cancellations.
+
+Display scheduled-flight on-time, cancelled and diverted shares together, with the exact denominator and airport coverage. A completed-flight view can be a supplementary diagnostic. Verify reporting scope and original dated inputs before using these comparisons for a service decision; passenger-delay or rebooking decisions require passenger data.
+
+This is a retrospective descriptive calculation on nominal published carrier codes, not independently verified operating-only or disjoint populations. Fixed airport weights do not control routes, weather, season or passengers. No causal airline strategy, actual cancellation action, passenger benefit, novelty or future performance is established.
+
+## Primary held panels
+
+Rates are percentages; gap is percentage points. Fixed 2019 airport weights. Reported N is a nominal source-cell count.
+
+| Code | Year | Reported N | Completed % | Scheduled % | Gap pp | Cancel % | Divert % |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| UA | 2023 | 444,416 | 78.100 | 76.930 | 1.170 | 1.280 | 0.225 |
+| WN | 2023 | 1,005,692 | 76.646 | 75.811 | 0.835 | 0.918 | 0.175 |
+| UA | 2024 | 464,998 | 78.871 | 77.519 | 1.353 | 1.487 | 0.225 |
+| WN | 2024 | 1,005,250 | 77.303 | 76.594 | 0.708 | 0.730 | 0.181 |
+| UA | 2025 | 487,337 | 78.042 | 77.265 | 0.776 | 0.748 | 0.252 |
+| WN | 2025 | 999,900 | 76.331 | 75.545 | 0.786 | 0.826 | 0.201 |
+
+## All held panels and airport coverage
+
+| Code | Year | Airports | Weight % | Pooled % | Fixed % | Diff pp |
+| --- | --- | --- | --- | --- | --- | --- |
+| AA | 2023 | 58 | 100.000 | 75.761 | 73.856 | 1.905 |
+| DL | 2023 | 58 | 100.000 | 83.053 | 81.865 | 1.188 |
+| UA | 2023 | 58 | 100.000 | 78.063 | 76.930 | 1.133 |
+| WN | 2023 | 58 | 100.000 | 76.764 | 75.811 | 0.953 |
+| AA | 2024 | 58 | 100.000 | 72.474 | 70.184 | 2.290 |
+| DL | 2024 | 58 | 100.000 | 82.139 | 80.875 | 1.264 |
+| UA | 2024 | 58 | 100.000 | 78.572 | 77.519 | 1.053 |
+| WN | 2024 | 58 | 100.000 | 78.271 | 76.594 | 1.677 |
+| AA | 2025 | 57 | 99.862 | 73.323 | 70.703 | 2.620 |
+| DL | 2025 | 58 | 100.000 | 79.679 | 78.006 | 1.673 |
+| UA | 2025 | 58 | 100.000 | 78.276 | 77.265 | 1.010 |
+| WN | 2025 | 58 | 100.000 | 77.185 | 75.545 | 1.640 |
+
+## All synthetic conversions
+
+Conditional-rate gains are percentage points. Zero conversion is exactly the original data; all scheduled-rate changes stay zero.
+
+| Code | Year | 10% gain | 25% gain | 50% gain | Scheduled change |
+| --- | --- | --- | --- | --- | --- |
+| AA | 2023 | 1.859 | 4.956 | 10.722 | 0.000 |
+| DL | 2023 | 1.381 | 3.644 | 7.712 | 0.000 |
+| UA | 2023 | 1.652 | 4.427 | 9.524 | 0.000 |
+| WN | 2023 | 1.782 | 4.691 | 10.064 | 0.000 |
+| AA | 2024 | 2.030 | 5.412 | 11.825 | 0.000 |
+| DL | 2024 | 1.454 | 3.839 | 8.143 | 0.000 |
+| UA | 2024 | 1.614 | 4.307 | 9.236 | 0.000 |
+| WN | 2024 | 1.730 | 4.559 | 9.780 | 0.000 |
+| AA | 2025 | 1.996 | 5.316 | 11.593 | 0.000 |
+| DL | 2025 | 1.627 | 4.299 | 9.193 | 0.000 |
+| UA | 2025 | 1.660 | 4.440 | 9.537 | 0.000 |
+| WN | 2025 | 1.794 | 4.730 | 10.160 | 0.000 |
+
+## Development and source qualifications
+
+| Code | Year | Airports | Weight % | Completed % | Scheduled % | Gap pp |
+| --- | --- | --- | --- | --- | --- | --- |
+| AA | 2019 | 58 | 100.000 | 77.144 | 75.469 | 1.675 |
+| DL | 2019 | 58 | 100.000 | 85.062 | 84.764 | 0.297 |
+| UA | 2019 | 58 | 100.000 | 77.930 | 77.140 | 0.790 |
+| WN | 2019 | 58 | 100.000 | 81.191 | 79.092 | 2.099 |
+| AA | 2020 | 48 | 96.515 | 88.254 | 82.920 | 5.334 |
+| DL | 2020 | 52 | 97.896 | 90.401 | 85.745 | 4.656 |
+| UA | 2020 | 33 | 75.313 | 89.852 | 82.999 | 6.853 |
+| WN | 2020 | 58 | 100.000 | 93.279 | 85.566 | 7.713 |
+| AA | 2021 | 51 | 96.722 | 81.288 | 79.402 | 1.886 |
+| DL | 2021 | 54 | 99.113 | 87.910 | 87.310 | 0.601 |
+| UA | 2021 | 49 | 94.878 | 81.021 | 79.780 | 1.241 |
+| WN | 2021 | 58 | 100.000 | 77.128 | 75.447 | 1.680 |
+| AA | 2022 | 57 | 99.735 | 75.378 | 73.211 | 2.167 |
+| DL | 2022 | 58 | 100.000 | 83.568 | 82.137 | 1.431 |
+| UA | 2022 | 57 | 96.040 | 79.585 | 78.014 | 1.571 |
+| WN | 2022 | 58 | 100.000 | 74.437 | 71.841 | 2.596 |
+
+Original source blanks, algebraic structural-zero resolution and complete-year exclusions are retained. The original failed source check remains in results/SOURCE_FAILURE_INITIAL.json; subsequent exact source controls pass. No retrospective source snapshot establishes historical live availability. All monthly results, all fixed scenarios, independent SQL/rational checks and exact isolated replay are in results/ and REPROCHECK.json.

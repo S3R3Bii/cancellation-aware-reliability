@@ -1,0 +1,168 @@
+{
+  "timestamp_utc": "2026-10-29T22:10:03.779229+00:00",
+  "version": "Current canonical file hashes; candidate remote release pending",
+  "file_sha256": {
+    ".gitattributes": "c10a433781311d21f680039ce94e72090621c1bfa73fbbc717b259cabdea3e46",
+    ".gitignore": "045343b3ab8a04073b35c459128e2fa517085c8c1f8765bdf2c0451b42ecfa16",
+    "DECISION_SUMMARY.md": "e046cf65c8310c4c6de55e6d95074925cc6d5fffa863b554ad67c69042015bf2",
+    "FREEZE.json": "d2b995ffdc0d73151b98efacd1693f2cdd272bbca1f94156470c5d01319eed51",
+    "protocol.json": "7e806786c043f34add11ad8f0fdc77ed97221cc8171743ab053003e4a36ca159",
+    "PROTOCOL.md": "ab393bd8517f2e47ee2482fc534677e2258f78253e90505b07c3b189835bfb5c",
+    "README.md": "2edebd7f55cb31e915ccbeeaab1205a0e56958fba545d661fc9282cbc63c687a",
+    "REPROCHECK.json": "3e7b7cc7ef7c794a68a3705a482459cea1da751c71181c7170cc1c76fcdc1940",
+    "requirements.txt": "ed40f56f29410c00fd3ef1c4af584f92dd122a37e0a14f33539ed96d64b9eba3",
+    "SOURCES.md": "8eebd58f8205063fb85734c8e48298dcbd39d781e3d98be489ff917fae0ab242",
+    "SOURCE_CLARIFICATION.md": "f78f20cfb9c7ac0908ea399e1fff1ef1d0356b6dcaedc8bde99db48bbc4cd4f7",
+    ".github/workflows/verify.yml": "31fcb5ba60c1cac409438c38e509a004d7be77e04132477a717b6a97b9dc7e85",
+    "data/README.md": "e50be805358bb0b6d8060cf54a8d86e24af667fb4fe9897820da876218a96af6",
+    "data/source/control_totals.json": "467716f6e4c6d208c42c3298689f25bbfe4dcbe09dc9dd5a8ad89dece432c3e2",
+    "data/source/flight-counts.csv.gz": "86c7b2fe17cb88d8daee44100f70993a2ac462cc722ad463d24f6e578cfba8f3",
+    "data/source/manifest.json": "c8ac52c13af2a9a127aa708f1dd4e18e8c530b66d37a5fb1ef45f767001d578b",
+    "data/source/structural-null-verification.json": "3ed683c528db3e77efde66966aafe99ae06ee7e897757fa93196a0d09786bb01",
+    "figures/airport_mix.pdf": "c82388db8a4c1a6a0ede4ecd071cc0688a5c1b43866e983684890d0fcc21ac8a",
+    "figures/airport_mix.png": "d25e9bd7738c224a077b4d4938b1f384a41e00b44be28c5fc407eaed2cc1e063",
+    "figures/airport_mix.svg": "abf95452dd2d17ad68ef337afb6e61241f80b27f7312c08914bef2607adca796",
+    "figures/ARTIST_VALUES.json": "826e028ddc0f577de86dabcf4177b653cdc46c051e3bd29515aad7f0c7aa5c65",
+    "figures/denominator_rates.pdf": "376c7b6031761b940de12ca1b81ab46a6dc601173da12b5d8781b14b46db5959",
+    "figures/denominator_rates.png": "6e36184a50e0131fd44be54b0e5f9e764f59f50d4f61bad9134d702b44b380ea",
+    "figures/denominator_rates.svg": "6660ff18a31556ea3f49628a2e4f5fcedf3467fe14e190ab92a33b8a41c14df1",
+    "figures/MANIFEST.json": "b540de5e8aa67d9fec7e601c5de61672a6ac062196a951c49512e7df8933a023",
+    "figures/synthetic_conversion.pdf": "c2320db1fb6edda9d86e9b87f4025be3c4ca726c949845c2ab1d00558841db16",
+    "figures/synthetic_conversion.png": "c8ea2d5a3bc3e08f33076e1c38c4eac44eec9c46f0f8c67ac8e38ef227475b8c",
+    "figures/synthetic_conversion.svg": "be5e82c9e5ba451888edaf452bbc52f14feb187760044ba4c47ba0c7316d045f",
+    "figures/VERIFICATION.json": "5ac7b3cf5705777bb37d8ca70434e8c7bb777a212c9dac7ce8b6052fcf2e5042",
+    "paper/main.tex": "c42e5a7baf82cd4edc07195fec18bb6fde54a3f0dfb6317df5e2b4d48104d29f",
+    "paper/manuscript.pdf": "db086f7234d398323c391ab7ddc6c777c9af2341639fd17158b1cf26db931800",
+    "paper/PUBLICATION_SCOPE.json": "d5fcc3108848c17ec95852b91f19e224e63b1ac74abb5f28bb3cbeae78971800",
+    "paper/TABLE_VALUES.json": "a680405bf3f7224f3f86ed51ac685bba3a5147d4a00f4a889f19524317106187",
+    "paper/VERIFICATION.json": "2b7bbb6deb6161500829fa314bb0b22aa5b81e4dc5f7889831b6172786214257",
+    "paper/images/airport_mix.pdf": "c82388db8a4c1a6a0ede4ecd071cc0688a5c1b43866e983684890d0fcc21ac8a",
+    "paper/images/denominator_rates.pdf": "376c7b6031761b940de12ca1b81ab46a6dc601173da12b5d8781b14b46db5959",
+    "paper/images/synthetic_conversion.pdf": "c2320db1fb6edda9d86e9b87f4025be3c4ca726c949845c2ab1d00558841db16",
+    "results/cohort.csv": "f7d36964fcee224ad9b8736f59f5203f77975a0669f6cc3973fd73a50b20a8f0",
+    "results/development-airport-counts.csv.gz": "1158d3c4a3e5a868e19df6133583c36c1309931e05a6b88a338152403cf2ff81",
+    "results/development-coverage.csv": "6ce1f18ca12544a92398e9de33d3b985b4453389415e718c38b04c6ac3c7e7fc",
+    "results/development-metrics.csv.gz": "55e5a5f1cf4e322fd1824c9f023d5922e4a27bab49164b48fb0a2d771a81ea4c",
+    "results/development-panel-airports.csv": "d09929d27f99a0a8f9701566a7eaf869045e5528c950bb72a84a9ecb235a0e0c",
+    "results/development-SUMMARY.json": "e124a679f1d46373bf1bb8b3304a121bd7b632f947cb754801e5b29b982937cb",
+    "results/development-VERIFICATION.json": "f6793787e2de8d43e08de9e8dad6ec92ccd79a0af2832cefe77eac48dc08dda2",
+    "results/held-airport-counts.csv.gz": "464901c7ebbb79a37e534a2e973a93d48657ed589b5363dd604477f4f2cc94a7",
+    "results/held-coverage.csv": "64352e2813727c61b50737006c8e3d55a317a738571a79798659e1be0ce6a5d9",
+    "results/held-metrics.csv.gz": "324201d8c12b25a83d1e5c081c41a464b83a87cbb1fa8c29f192cf43b3031ba3",
+    "results/held-panel-airports.csv": "b682acd30c0c4825883c270716528424c614133313704ff36d4b6156bae1c3f4",
+    "results/held-SUMMARY.json": "2bfa0b9924a9dfb853c1fd99502174142e4f973f1c166ad8bcd930c059db1ca6",
+    "results/held-VERIFICATION.json": "1dc015914c4b92d1457ee94f024d2232f71d82edd48139932b3f8e80ff494445",
+    "results/source-resolution.csv": "206a63a4136a23d55990349271694a77c2194a683170c09343448915f69db6aa",
+    "results/SOURCE_FAILURE_INITIAL.json": "7e98335db5f6e29cc5df3a2b236fb6bf5b86bb330265dd8f640a5c4459abb069",
+    "results/weights.csv": "06f78942d83ad01326452b92ae6e99f165f9dfd246ac275677badbdd2cd6616d",
+    "src/check_reproduction.py": "657a19cd1327fb4dde37c3994cbc571bf4f0c110bf99eaf0125dda65e8e41c4a",
+    "src/make_figures.py": "67dac5b294a9437274dd03c0928b9aa0f98cea81aaff2d6fb4f7dd5b1e945708",
+    "src/model.py": "defcdec5e3be1eb5057fca5d5a869d9d1e05436e4c6e5fd7bbfe2fc55058f60e",
+    "src/project_source.py": "c694b1cfb3ba655b976b958f38be190c36509ecbe7a926b99e5c9fea11312fe1",
+    "src/run_analysis.py": "ee76082e7cd4a596c6e196947d4be5913307c0137a0c7b5757a992d6bc1da257",
+    "src/verify_figures.py": "3f59dc3e28465a0ded74d558e61f7fc1be3912e9a82ac4369e14b12e4ad77b05",
+    "src/verify_freeze.py": "b012e4d2a0195b472eb0d4fb0ab7fa9e115ef6182ca6e119511ba4014980a2c5",
+    "src/verify_paper.py": "b993de7b07fc15f51398693de3eb8c44f5cf531725834faf998f9f7e1241d0ab",
+    "src/verify_public_package.py": "2f6a170317d1fae7038e43d81aa1212867433604cd5ce9ab8d7a2ac28bf2fd72",
+    "src/verify_results.py": "cf8aca65cc4ae0e7eb33934370ab77137fe18bd9aab6bf513d639f248d03b5a7",
+    "tests/test_model.py": "74d5c0b44e350bb888b6aa74b5fd5b428b5406be6deaf782fa313a9adb921c5f"
+  },
+  "criteria": {
+    "source_and_rights": {
+      "state": "PASS",
+      "grade": 4,
+      "evidence": "Official public form export:161415 rows;38069 minimal eight-field nominal-carrier rows retained;1291320 independently parsed scalars and8 official count/percentage controls. Original nulls preserved; exact nonnegative partition bounds resolve243 structural blanks,23 selected. Unknown totals remain unknown and cannot pass predefined complete-year eligibility. Bounded factual-data publication with attribution, no raw archive/source prose or blanket license."
+    },
+    "fixed_design_and_separation": {
+      "state": "PASS",
+      "grade": 4,
+      "evidence": "Protocol f68166e before analytical retrieval; explicit pre-summary source scope/null clarification with retained initial failure.25 dependencies frozen at5f23c46 before held analytical summaries.58 baseline airports; no fitting, selection or predictive/unseen-carrier claim. Full source inputs/quality visible, without blinding; historical vintages and operating/network scope remain outside the claim."
+    },
+    "finite_math_and_replay": {
+      "state": "PASS",
+      "grade": 4,
+      "evidence": "15 hand/boundary fixtures; separate SQLite cohorts/weights/transformed counts and rational reconstruction:865095 development and725563 held exact exported fields,168675 and135525 conversion-identity checks. All4 conversion settings,28 carrier-year panels and monthly results retained. Isolated replay:1399126 exact CSV fields,4 summary/verification documents,25 protected dependencies."
+    },
+    "presentation_and_readability": {
+      "state": "PASS",
+      "grade": 4,
+      "evidence": "Executive decision, actual0.708–1.353pp range, constructed-versus-official denominator distinction, next evidence and limits visible first. All3 original figures viewed;168 numeric artist values,6 gap labels,24 heatmap labels/contrast checks,9 hashes. All7 final rendered pages inspected; no layout/glyph warnings or accessibility-conformance claim."
+    },
+    "paper_source_and_numbers": {
+      "state": "PASS",
+      "grade": 4,
+      "evidence": "365 independent table/source-total/qualification/hash checks. All6 primary,12 held mix,12 synthetic and16 development rows reconstructed. Exact five-file manuscript scope;4 bounded PDF-action checks permit only harmless internal page-fit destination and URI links. Current seven-page PDF hash db086f7234d398323c391ab7ddc6c777c9af2341639fd17158b1cf26db931800."
+    },
+    "privacy_and_canonical_package": {
+      "state": "PENDING",
+      "evidence": "Required final scoped staged audit and canonical Git-blob check before release. No raw archive, personal/flight/tail data, credentials or formal-publication project."
+    },
+    "exact_head_remote_release": {
+      "state": "PENDING",
+      "evidence": "Required exact-head candidate and main Linux checks, matching tested/merged tree, remote annotated tag and synchronized portfolio metadata."
+    }
+  },
+  "status": "LOCAL_SCIENTIFIC_AND_DOCUMENT_GATES_PASS_REMOTE_RELEASE_PENDING",
+  "corrections": [
+    {
+      "defect": "Strict projection initially rejected structural blank delay counts",
+      "repair": "Independent C-parser found all243 cells have N=C+V; pre-summary algebraic nonnegative partition bound uniquely identifies derived D=O=0 while original blanks remain blank; positive-remainder unknowns still fail",
+      "scientific_change": "Source-interpretation correction before analytical summaries; no threshold/carrier/year change",
+      "failed_evidence": "results/SOURCE_FAILURE_INITIAL.json and private airport03-failures/round1-source-null-outcomes"
+    },
+    {
+      "defect": "Null diagnostic added nullable counts after exact controls and stopped before manifest",
+      "repair": "Guard the diagnostic against entirely unknown rows; source-projection bytes unchanged",
+      "scientific_change": false,
+      "failed_evidence": "Private airport03-failures/round1-null-diagnostic"
+    },
+    {
+      "defect": "Initial legend overlap; subsequent three-line footer overlapped axis label",
+      "repair": "One targeted change for each overlap; final changed figure viewed, other two inspected PNGs byte-identical; plotted values unchanged",
+      "scientific_change": false,
+      "failed_evidence": "Private airport03-paper/round2-initial-legend-layout and round2-footer-overlap"
+    },
+    {
+      "defect": "First figure checker used star-unpacking subscription syntax unavailable in Python3.10",
+      "repair": "Use an explicit tuple index; no data/analysis changes",
+      "scientific_change": false,
+      "failed_evidence": "Task tool outputs"
+    },
+    {
+      "defect": "Initial manuscript had unsupported Unicode punctuation and two long-URL overflows",
+      "repair": "Represent punctuation in TeX and use xurl line breaks; final compile clean and all7 pages inspected",
+      "scientific_change": false,
+      "failed_evidence": "Private airport03-paper/round3-initial-encoding-url-layout"
+    },
+    {
+      "defect": "First PDF checks treated ligatures/hyphenation as missing text and rejected harmless page-fit destination",
+      "repair": "Normalize presentation glyphs for text presence; require exact internal page-fit destination and reject external executable actions; no PDF or table changes",
+      "scientific_change": false,
+      "failed_evidence": "Task tool outputs"
+    },
+    {
+      "defect": "Generated SVG line endings/trailing whitespace blocked staged diff check",
+      "repair": "Normalize whitespace and prove parsed SVG geometry/text structure identical; all PDF/PNG hashes unchanged; refresh SVG hashes",
+      "scientific_change": false,
+      "failed_evidence": "Private airport03-paper/round3-staged-svg-whitespace"
+    }
+  ],
+  "budget": {
+    "rounds_used": 3,
+    "round_limit": 3,
+    "active_review_minutes_limit": 45,
+    "review_tool_calls_limit": 60,
+    "review_call_conservative_upper_count": 58,
+    "accounting": "Conservative bound includes mixed execution/check calls and failures; workload proxy, not quota or billing.",
+    "elapsed_wall_minutes_including_execution": 19.06298715
+  },
+  "account_usage": "Supported shared-account observation retained privately; not task consumption.",
+  "unknowns": [
+    "True complete schedules and source accuracy",
+    "Original publication vintages",
+    "Operating-versus-marketing and disjoint population identity",
+    "Passenger itineraries, delay, rebooking and welfare",
+    "Causal cancellation behavior and future service performance"
+  ],
+  "stop_reason": "All local scoped criteria pass within bounded review. Perform required privacy/canonical and exact-head remote proof, with frozen analysis unchanged."
+}
