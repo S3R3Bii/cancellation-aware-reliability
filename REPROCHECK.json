@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "exact_csv_fields": 1399126,
+  "verification_and_summary_documents": 4,
+  "protected_dependencies": 25,
+  "scope": "Exact isolated replay of declared captured-input stages; no live availability, causal or source-truth claim."
+}

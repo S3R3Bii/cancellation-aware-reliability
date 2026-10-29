@@ -1,0 +1,15 @@
+{
+  "stage": "held",
+  "carrier_year_panels": 12,
+  "baseline_airports": 58,
+  "airport_count_rows": 36140,
+  "metric_rows": 8736,
+  "undefined_metric_rows": 0,
+  "scenarios": [
+    "0",
+    "1/10",
+    "1/4",
+    "1/2"
+  ],
+  "interpretation": "Retrospective finite monthly published-count and denominator comparison. Route/time-to-event and NOAA weather adjustment from the broader proposal are outside this export and are not claimed. No passenger-delay, cancellation-causes, airline strategy, operational benefit, savings or novelty claim."
+}
