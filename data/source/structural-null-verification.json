@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-10-29T21:58:45.136349+00:00",
+  "state": "INDEPENDENT_STRUCTURAL_BOUND_CONFIRMED_SOURCE_CONTROLS_PENDING",
+  "affected_rows": 243,
+  "selected_rows": 23,
+  "independent_checks": 1701,
+  "proof": "Observed integer/nonnegative N,C,V; original D missing; N-C-V=0 on all243 cells. Nonnegative mutually exclusive D,O therefore each equal0; positive remainder unknowns still fail.",
+  "original_nulls_preserved": true,
+  "conditional_zero_denominator": "UNDEFINED",
+  "initial_failure": "results/SOURCE_FAILURE_INITIAL.json",
+  "remaining": "Run exact source controls and independent full-source projection; no analytical metrics inspected."
+}

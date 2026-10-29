@@ -1,0 +1,10 @@
+{
+  "url": "https://www.transtats.bts.gov/ot_delay/ot_delaycause1.asp?qv52ynB=qn6n&20=E",
+  "form": {"Carrier": "All", "Airport": "All", "PeriodFrom": "24229", "PeriodTo": "24312"},
+  "scope": "Official tabular display for January 2019 through December 2025, all supplied carrier and airport codes; source consistency only, not independently verified unique operations or true schedule completeness.",
+  "html_sha256": "84ae3094a245d2c2f74484fbe4d822e76eab8021d2c7cd22e96c5dc4feb80c38",
+  "retrieved_utc": "2026-10-29T21:54:23.307277+00:00",
+  "counts": {"N": 49001937, "O": 38640915, "C": 1070713, "V": 118582},
+  "display_percent": {"N": "100.00", "O": "78.86", "C": "2.19", "V": "0.24"},
+  "delay_cause_warning": "Prorated delay-cause component counts are rounded and are not required to sum exactly. No cause-specific attribution is analyzed."
+}
