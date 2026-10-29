@@ -1,0 +1,78 @@
+{
+  "study": "03",
+  "version": 1,
+  "source": {
+    "landing": "https://www.transtats.bts.gov/ot_delay/OT_DelayCause1.asp",
+    "interface": "Official all-carrier/all-airport monthly delay-cause ZIP export",
+    "start_year": 2019,
+    "end_year": 2025,
+    "fields": [
+      "year",
+      "month",
+      "carrier",
+      "airport",
+      "arr_flights",
+      "arr_del15",
+      "arr_cancelled",
+      "arr_diverted"
+    ],
+    "rights": "Exact source rights and count semantics must pass before analysis/publication",
+    "raw_archives_public": false
+  },
+  "carriers": [
+    "AA",
+    "DL",
+    "UA",
+    "WN"
+  ],
+  "development_carriers": [
+    "AA",
+    "DL"
+  ],
+  "held_carriers": [
+    "UA",
+    "WN"
+  ],
+  "baseline_year": 2019,
+  "development_years": [
+    2020,
+    2021,
+    2022
+  ],
+  "held_years": [
+    2023,
+    2024,
+    2025
+  ],
+  "cohort": "All destination airports with exactly twelve valid positive scheduled-count entries for each of the four fixed carriers in 2019; no outcome-rate threshold. At least five common airports required. Each carrier-year comparison uses the subset of baseline airports with all twelve valid positive-denominator months in that year; no zero imputation; retain every exclusion and baseline-volume coverage.",
+  "outcomes": {
+    "N": "Source scheduled total; semantics must independently reconcile",
+    "D": "Arrivals at least fifteen minutes late excluding cancelled/diverted flights",
+    "C": "Cancelled",
+    "V": "Diverted",
+    "O": "N-D-C-V",
+    "B": "N-C-V"
+  },
+  "metrics": {
+    "completed_delay": "D/B",
+    "scheduled_disruption": "(D+C+V)/N",
+    "completed_ontime": "O/B",
+    "scheduled_ontime": "O/N",
+    "cancellation": "C/N",
+    "diversion": "V/N",
+    "denominator_inflation": "O/B-O/N"
+  },
+  "standardization": "For each carrier-year common-airport panel compute observed-count pooled rates and a direct standardized rate using fixed 2019 scheduled-count weights pooled across all four carriers. Renormalize fixed weights on that panel and disclose coverage. This controls the measured airport mix only, not routes, seasonality, passenger loads, weather or causal confounding.",
+  "synthetic_conversion_fractions": [
+    "0",
+    "1/10",
+    "1/4",
+    "1/2"
+  ],
+  "conversion": "At each valid carrier-airport-month cell replace floor(q*D) delayed flights with cancellations; N,V,O fixed, D decreases, C increases. Preserve every q. Algebraic dashboard stress only, not an airline action model or empirical effect.",
+  "primary": "Completed-flight versus scheduled-flight on-time denominator inflation, standardized with fixed 2019 airport weights, UA/WN in 2023\u20132025; report all six carrier-year panels, all months, unstandardized rates and airport coverage. No preferred positive effect or score winner.",
+  "selection": "No fitting, optimizer, hyperparameter selection, survival model or forecasting. Fixed carriers and all deterministic scenarios retained. Freeze source/protocol/executable/checker before held analytical summaries; source inputs and quality visible without blinding.",
+  "checks": "Strict unique year-month-carrier-airport keys; nonnegative integer counts; D+C+V<=N; source denominators reconcile to official tabular counts/percentages at display precision; independent pandas/standard-CSV projection and source controls; independent SQLite cohorts/weights/counts plus rational metric/identity reconstruction; isolated replay.",
+  "scope": "Retrospective finite monthly published-count and denominator comparison. Route/time-to-event and NOAA weather adjustment from the broader proposal are outside this export and are not claimed. No passenger-delay, cancellation-causes, airline strategy, operational benefit, savings or novelty claim.",
+  "public_scope": "Only minimal federal aggregate count projection and original code/results/figures/manuscript after bounded rights/privacy checks. No flight/customer/tail identifiers, bookings, raw archives, full reports, logos, credentials or formal-publication projects."
+}
