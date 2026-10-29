@@ -1,0 +1,9 @@
+# Captured published count cells
+
+The official BTS form at https://www.transtats.bts.gov/ot_delay/OT_DelayCause1.asp was submitted with Carrier=All, Airport=All, PeriodFrom=24229 and PeriodTo=24312 (January 2019–December 2025). Its own Download Raw Data link supplied the hash-pinned ZIP in manifest.json. Complete source CSV/ZIP and website text remain private. The public projection contains eight factual key/count fields for the four fixed nominal carrier codes only, with source attribution and no source-wide license claim.
+
+There are 161,415 source rows and 38,069 selected rows. A separate pandas C-parser matched 1,291,320 selected source scalars across the complete file. All source full keys are unique. Eight exact-count/display-percentage controls reconcile to the independently requested official tabular view. This establishes snapshot consistency, not source truth, schedule completeness or historical availability.
+
+The complete source has 294 rows with unknown scheduled/outcome totals. The selected codes contain 42 such rows; retain the blanks and exclude them from valid complete-year panels with explicit reasons. Another 243 source cells (23 selected) have a blank delay count and observed N=C+V: the exact nonnegative partition identifies derived D=O=0. Keep original blanks in flight-counts.csv.gz and mark their logical resolution separately. A blank with a positive remaining completed denominator fails. Conditional rates with a zero completed denominator stay undefined.
+
+To reconstruct the minimal projection, obtain the official same-window ZIP through that form and run `python src/project_source.py --archive <path-outside-this-repository>`. The pinned raw/member hashes must match. The script independently parses, controls and projects the source; it does not silently accept a newer revision. `python src/check_reproduction.py` uses the captured minimal projection and performs no network retrieval.
